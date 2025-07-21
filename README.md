@@ -14,9 +14,11 @@
   - [Python Projects](#python-projects)  
   - [C++ Projects](#c-projects)  
   - [Rust Experiments](#rust-experiments)  
+
 ---
 ## About Me
-Hey! I’m Arthur. I’m a Liberian American, former (and recovering) Kentuckian, and current Illinoisian. I’m a proud Dartmouth College graduate, where I earned my economics degree with high honors and minored in public policy. I've worked in education, finance, and public policy. I am driven by a desire to make systems work better for people.
+<p>Hey! I’m Arthur. I’m a Liberian American, former (and recovering) Kentuckian, and current Illinoisian. I’m a proud Dartmouth College graduate, where I earned my economics degree with high honors and minored in public policy. I've worked in education, finance, and public policy. I am driven by a desire to make systems work better for people.</p>
+
 ---
 ## Technologies & Tools
 - Programming Languages  
