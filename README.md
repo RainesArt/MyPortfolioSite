@@ -1,5 +1,50 @@
 # Arthur Raine's Portfolio
-<p>Hi! I am Arthur. Welcome to this GitHub repository, where you can find code and projects that I've worked on and am working on. To get started, I primarily work in C++, Python, and Stata. However, I am doing my best to learn Rust.</p>
-<ul>
-  <li> Stata Code: This contains Stata do files with code from projects I've worked on. Currently, it contains two files: data_cleaning_code and code_book_generator_code. data_cleaning_code contains some useful code snippets, like selecting a random variable value from past projects. The code_book_generator_code is code that creates a formatted data dictionary/codebook from a Stata dataset based on Northwestern's color scheme </li>
-</ul>
+<p>Hi! I am Arthur. Welcome to my personal portfolio repository. Here you’ll find code and projects spanning data analysis, statistical programming, and software development. I specialize in C++, Python, and Stata, and I’m actively learning Rust to broaden my toolkit.</p>
+
+---
+## Table of Contents
+- [About Me](#about-me)  
+- [Technologies & Tools](#technologies--tools)  
+- [Project Structure](#project-structure)  
+- [Getting Started](#getting-started)  
+  - [Prerequisites](#prerequisites)  
+  - [Installation](#installation)  
+- [Projects](#projects)  
+  - [Stata Code](#stata-code)  
+  - [Python Projects](#python-projects)  
+  - [C++ Projects](#c-projects)  
+  - [Rust Experiments](#rust-experiments)  
+- [Contributing](#contributing)  
+- [License](#license)  
+- [Contact](#contact)  
+---
+---
+## About Me
+I hold a degree from Dartmouth College, where I explored the intersection of economics and education in Africa.My work combines rigorous statistical methods with practical software solutions to drive insights.
+
+---
+---
+## Technologies & Tools
+- Programming Languages  
+  - C++  
+  - Python  
+  - Stata (do-file scripting)  
+  - Rust (in progress)  
+
+- Development & Collaboration  
+  - Git & GitHub    
+---
+## Project Structure
+
+```plaintext
+.
+├── stata/
+│   ├── data_cleaning_code.do
+│   └── code_book_generator_code.do
+├── python/
+│   ├── 
+│   └── 
+├── cpp/
+├── rust/
+│   └── monte_carlo_rust.rs
+└── README.md
