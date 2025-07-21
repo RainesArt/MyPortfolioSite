@@ -1,7 +1,3 @@
-# Arthur Raine's Portfolio
-<p>Hi! I am Arthur. Welcome to my personal portfolio repository. Here you’ll find code and projects spanning data analysis, statistical programming, and software development. I specialize in C++, Python, and Stata, and I’m actively learning Rust to broaden my toolkit.</p>
-
----
 ## Table of Contents
 - [About Me](#about-me)  
 - [Technologies & Tools](#technologies--tools)  
@@ -17,7 +13,7 @@
 
 ---
 ## About Me
-<p>Hey! I’m Arthur. I’m a Liberian American, former (and recovering) Kentuckian, and current Illinoisian. I’m a proud Dartmouth College graduate, where I earned my economics degree with high honors and minored in public policy. I've worked in education, finance, and public policy. I am driven by a desire to make systems work better for people.</p>
+<p>Hey! I’m Arthur. I’m a Liberian American, former (and recovering) Kentuckian, and current Illinoisian. I’m a proud Dartmouth College graduate, where I earned my economics degree with high honors and minored in public policy. I've worked in education, finance, and public policy. I am driven by a desire to make systems work better for people. Here you’ll find code and projects spanning data analysis, statistical programming, and software development. I specialize in C++, Python, and Stata, and I’m actively learning Rust to broaden my toolkit.</p>
 
 ---
 ## Technologies & Tools
