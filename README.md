@@ -5,7 +5,7 @@
 ## Table of Contents
 - [About Me](#about-me)  
 - [Technologies & Tools](#technologies--tools)  
-- [Project Structure](#project-structure)  
+- [Repository Structure](#project-structure)  
 - [Getting Started](#getting-started)  
   - [Prerequisites](#prerequisites)  
   - [Installation](#installation)  
@@ -14,15 +14,9 @@
   - [Python Projects](#python-projects)  
   - [C++ Projects](#c-projects)  
   - [Rust Experiments](#rust-experiments)  
-- [Contributing](#contributing)  
-- [License](#license)  
-- [Contact](#contact)  
----
 ---
 ## About Me
-I hold a degree from Dartmouth College, where I explored the intersection of economics and education in Africa.My work combines rigorous statistical methods with practical software solutions to drive insights.
-
----
+Hey! I’m Arthur. I’m a Liberian American, former (and recovering) Kentuckian, and current Illinoisian. I’m a proud Dartmouth College graduate, where I earned my economics degree with high honors and minored in public policy. I've worked in education, finance, and public policy. I am driven by a desire to make systems work better for people.
 ---
 ## Technologies & Tools
 - Programming Languages  
@@ -34,10 +28,9 @@ I hold a degree from Dartmouth College, where I explored the intersection of eco
 - Development & Collaboration  
   - Git & GitHub    
 ---
-## Project Structure
+## Repository Structure
 
 ```plaintext
-.
 ├── stata/
 │   ├── data_cleaning_code.do
 │   └── code_book_generator_code.do
