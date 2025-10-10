@@ -20,7 +20,8 @@
 - Programming Languages  
   - C++  
   - Python  
-  - Stata (do-file scripting)  
+  - Stata (do-file scripting)
+  - Mata (Stata's "serious" programming language with memory management)  
   - Rust (in progress)  
 
 - Development & Collaboration  
