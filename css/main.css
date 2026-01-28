@@ -1,0 +1,222 @@
+:root {
+    --rust: #C05746;
+    --sage: #ADC698;
+    --mint: #D0E3C4;
+    --white: #FFFFFF;
+    --plum: #503047;
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Karla', sans-serif;
+    --transition: all 0.3s ease;
+    --shadow: 0 10px 40px rgba(80, 48, 71, 0.1);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--plum);
+    background: var(--white);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+/* Navigation */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav--dark {
+    background: transparent;
+}
+
+.nav--light {
+    background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0) 100%);
+}
+
+.logo {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.logo--light {
+    background: var(--rust);
+    color: var(--white);
+}
+
+.logo--dark {
+    background: var(--plum);
+    color: var(--white);
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    width: 35px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+.hamburger--light span { background: var(--white); }
+.hamburger--dark span { background: var(--plum); }
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Nav Overlay */
+.nav-overlay {
+    position: fixed;
+    inset: 0;
+    background: var(--plum);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+    z-index: 999;
+}
+
+.nav-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.nav-menu {
+    list-style: none;
+    text-align: center;
+}
+
+.nav-menu li {
+    margin: 1.5rem 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.nav-overlay.active .nav-menu li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nav-menu li:nth-child(1) { transition-delay: 0.1s; }
+.nav-menu li:nth-child(2) { transition-delay: 0.15s; }
+.nav-menu li:nth-child(3) { transition-delay: 0.2s; }
+.nav-menu li:nth-child(4) { transition-delay: 0.25s; }
+.nav-menu li:nth-child(5) { transition-delay: 0.3s; }
+
+.nav-menu a {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.nav-menu a:hover {
+    color: var(--sage);
+}
+
+.nav-menu .cta {
+    color: var(--rust);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn--primary {
+    background: var(--rust);
+    color: var(--white);
+}
+
+.btn--primary:hover {
+    background: var(--plum);
+    transform: translateY(-2px);
+}
+
+.btn--outline {
+    border: 2px solid var(--plum);
+    color: var(--plum);
+}
+
+.btn--outline:hover {
+    background: var(--plum);
+    color: var(--white);
+}
+
+/* Footer */
+.footer {
+    padding: 3rem;
+    text-align: center;
+    background: var(--plum);
+    color: var(--white);
+}
+
+.footer p {
+    opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav {
+        padding: 1rem 1.5rem;
+    }
+
+    .nav-menu a {
+        font-size: 2rem;
+    }
+}

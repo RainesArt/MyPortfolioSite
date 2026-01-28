@@ -1,0 +1,197 @@
+/* ===================================
+   ABOUT PAGE STYLES
+   =================================== */
+
+/* Hero */
+.about-hero {
+    padding: 10rem 4rem 5rem;
+    background: linear-gradient(135deg, var(--mint), var(--sage));
+    text-align: center;
+}
+.hero__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+.about-hero h1 {
+    font-size: 4rem;
+    color: var(--plum);
+    margin-bottom: 1rem;
+}
+
+.about-hero p {
+    font-size: 1.25rem;
+    color: var(--plum);
+    opacity: 0.85;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Story Section */
+.story {
+    padding: 5rem 4rem;
+    background: var(--white);
+}
+
+.story__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.story__image {
+    height: 1200px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    color: var(--plum);
+}
+
+.story__image_two {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+
+.story__content h2 {
+    font-size: 2.5rem;
+    color: var(--plum);
+    margin-bottom: 1.5rem;
+}
+
+.story__content p {
+    font-size: 1.1rem;
+    color: var(--plum);
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+}
+
+/* Narrative Section */
+.narrative {
+    padding: 4rem;
+    background: var(--white);
+}
+
+.narrative__content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.narrative__lead {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--plum);
+    font-style: italic;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.narrative__content p {
+    font-size: 1.1rem;
+    color: var(--plum);
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+}
+
+.narrative__content blockquote {
+    background: var(--mint);
+    padding: 2rem;
+    border-left: 4px solid var(--rust);
+    border-radius: 0 12px 12px 0;
+    margin: 2.5rem 0;
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--plum);
+    line-height: 1.6;
+}
+
+/* Journey Section */
+.journey {
+    padding: 5rem 4rem;
+    background: linear-gradient(135deg, var(--plum), #6b4560);
+    color: var(--white);
+}
+
+.journey h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.journey__content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.journey__content p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+    opacity: 0.95;
+}
+
+/* CTA */
+.cta-section {
+    padding: 5rem 4rem;
+    background: var(--white);
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    color: var(--plum);
+    margin-bottom: 0.75rem;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    color: var(--plum);
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .story__grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .story__image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 8rem 2rem 3rem;
+    }
+
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .story,
+    .narrative,
+    .journey,
+    .cta-section {
+        padding: 3rem 2rem;
+    }
+
+    .story__content h2,
+    .journey h2,
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+}
