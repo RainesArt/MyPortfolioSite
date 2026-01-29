@@ -95,3 +95,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         el.removeAttribute('stroke');
     });
 });
+
+
+
+const user = "arthur.h.raines";
+const domain = "gmail.com";
+document.getElementById("contact-me").href = `mailto:${user}@${domain}`;
+
