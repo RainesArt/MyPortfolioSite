@@ -145,6 +145,7 @@
 .card--sage { background: linear-gradient(135deg, var(--sage), var(--mint)); }
 .card--rust { background: linear-gradient(135deg, var(--rust), var(--plum)); color: var(--white); }
 .card--plum { background: linear-gradient(135deg, var(--plum), var(--sage)); color: var(--white); }
+.card--gold { background: linear-gradient(135deg, var(--mint), var(--sage)); }
 
 .card__number {
     position: absolute;
