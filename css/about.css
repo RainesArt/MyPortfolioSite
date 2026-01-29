@@ -161,6 +161,12 @@
     margin-bottom: 2rem;
 }
 
+.us-map {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 960 /600;
+}
+
 .us-map .state {
     pointer-events: all;
     stroke: #fff;
@@ -183,8 +189,23 @@
     stroke-width: 1;
     vector-effect: non-scaling-stroke;
     transition: fill .2s ease;
-    fill: #e9eef6;            /* ← base fallback so nothing stays white */
+    fill: #e9eef6;
 }
+
+
+.map-container {
+    max-width: 700px;
+    margin-inline: auto;
+}
+
+
+.us-map svg {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
 
 /* CTA */
 .cta-section {

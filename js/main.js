@@ -60,6 +60,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     const res = await fetch('images/map.svg');
     const svg = new DOMParser().parseFromString(await res.text(), 'image/svg+xml').documentElement;
 
+
+    svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+
+
+    svg.removeAttribute('width');
+    svg.removeAttribute('height');
+
+
+    if (!svg.hasAttribute('viewBox')) {
+        const w = parseFloat(svg.getAttribute('width')) || 960;
+        const h = parseFloat(svg.getAttribute('height')) || 600;
+        svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+    }
+
+
     const states = 'AL,AK,AZ,AR,CA,CO,CT,DE,FL,GA,HI,IA,ID,IL,IN,KS,KY,LA,MA,MD,ME,MI,MN,MO,MS,MT,NC,ND,NE,NH,NJ,NM,NV,NY,OH,OK,OR,PA,RI,SC,SD,TN,TX,UT,VA,VT,WA,WI,WY,WV,DC'.split(',');
 
     const tag = (id, cls) => {
