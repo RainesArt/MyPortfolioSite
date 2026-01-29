@@ -52,3 +52,31 @@ function initSmoothScroll() {
         });
     });
 }
+
+document.addEventListener('DOMContentLoaded', async () => {
+    const host = document.querySelector('#us-map-inline');
+    if (!host) return;
+
+    const res = await fetch('images/map.svg');
+    const svg = new DOMParser().parseFromString(await res.text(), 'image/svg+xml').documentElement;
+
+    const states = 'AL,AK,AZ,AR,CA,CO,CT,DE,FL,GA,HI,IA,ID,IL,IN,KS,KY,LA,MA,MD,ME,MI,MN,MO,MS,MT,NC,ND,NE,NH,NJ,NM,NV,NY,OH,OK,OR,PA,RI,SC,SD,TN,TX,UT,VA,VT,WA,WI,WY,WV,DC'.split(',');
+
+    const tag = (id, cls) => {
+        const el = svg.getElementById(id);
+        if (!el) return;
+        const targets = el.matches?.('path,polygon,rect,circle') ? [el] : el.querySelectorAll('path,polygon,rect,circle');
+        targets.forEach(n => n.classList.add('state', cls));
+    };
+
+    states.forEach(s => s !== 'AK' && tag(s, 'visited'));
+    tag('AK', 'not-visited');
+
+    host.replaceChildren(svg);
+
+    svg.querySelectorAll('[style],[fill],[stroke]').forEach(el => {
+        el.removeAttribute('style');
+        el.removeAttribute('fill');
+        el.removeAttribute('stroke');
+    });
+});

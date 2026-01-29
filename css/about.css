@@ -141,6 +141,51 @@
     opacity: 0.95;
 }
 
+/* Map Section */
+.map-section {
+    padding: 5rem 4rem;
+    background: var(--white);
+    text-align: center;
+}
+
+.map-section h2 {
+    font-size: 2.5rem;
+    color: var(--plum);
+    margin-bottom: 0.5rem;
+}
+
+.map-section__intro {
+    font-size: 1.1rem;
+    color: var(--plum);
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+
+.us-map .state {
+    pointer-events: all;
+    stroke: #fff;
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+    transition: fill .2s ease;
+}
+
+.us-map .state.visited { fill: var(--sage); }
+.us-map .state.not-visited { fill: #e0e0e0; }
+
+.us-map .state.visited:hover {
+    fill: var(--rust);
+    cursor: pointer;
+}
+
+.us-map .state {
+    pointer-events: all;
+    stroke: #fff;
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+    transition: fill .2s ease;
+    fill: #e9eef6;            /* ← base fallback so nothing stays white */
+}
+
 /* CTA */
 .cta-section {
     padding: 5rem 4rem;
