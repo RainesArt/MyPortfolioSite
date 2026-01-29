@@ -223,6 +223,16 @@ class PhotoCarousel {
 // Photo data - easy to extend with new images
 const photoData = [
     {
+        src: 'images/Maine_mountain_print.JPG',
+        location: 'Acadia National Park, Maine',
+        description: 'Pink granite cliffs meet the Atlantic along the rugged coast'
+    },
+    {
+        src: 'images/Maine_river_print.JPG',
+        location: 'Acadia National Park, Maine',
+        description: 'Morning mist rising over a quiet inlet'
+    },
+    {
         src: 'images/DSC_3023.JPG',
         location: 'La Cienega, New Mexico',
         description: 'The open road stretching toward the Sangre de Cristo Mountains'
