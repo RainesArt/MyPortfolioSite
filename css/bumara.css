@@ -79,6 +79,256 @@
     50% { transform: translateY(-15px); }
 }
 
+/* ===================================
+   NAME MEANING SECTION
+   =================================== */
+
+.name-meaning {
+    padding: 6rem 4rem;
+    background: linear-gradient(180deg, #f8fafa 0%, #fff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.name-meaning::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #1a9b9e, #14787a, #1a9b9e);
+}
+
+.name-meaning__header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 4rem;
+}
+
+.name-meaning__label {
+    display: inline-block;
+    background: linear-gradient(135deg, #1a9b9e, #14787a);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.name-meaning__header h2 {
+    font-size: 3rem;
+    color: var(--plum);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.name-meaning__header h2 em {
+    color: #1a9b9e;
+    font-style: italic;
+}
+
+.name-meaning__intro {
+    font-size: 1.15rem;
+    color: var(--plum);
+    opacity: 0.8;
+    line-height: 1.7;
+}
+
+/* Deity Grid */
+.deity-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+}
+
+.deity-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(26, 155, 158, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.deity-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(26, 155, 158, 0.2);
+}
+
+.deity-card--featured {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.deity-card--featured:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.deity-card__image {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+}
+
+.deity-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.deity-card:hover .deity-card__image img {
+    transform: scale(1.1);
+}
+
+.deity-card__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+            to top,
+            rgb(192, 87, 70) 0%,
+            transparent 30%
+    );
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+.deity-letter {
+    font-family: var(--font-display), serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.05em;
+}
+
+.deity-card__content {
+    padding: 2rem;
+}
+
+.deity-card__content h3 {
+    font-family: var(--font-display), serif;
+    font-size: 1.75rem;
+    color: var(--plum);
+    margin-bottom: 0.5rem;
+}
+
+.deity-origin {
+    display: block;
+    font-size: 0.85rem;
+    color: #1a9b9e;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(26, 155, 158, 0.15);
+}
+
+.deity-card__content p {
+    font-size: 0.95rem;
+    color: var(--plum);
+    opacity: 0.85;
+    line-height: 1.7;
+}
+
+/* Synthesis Visual */
+.name-synthesis {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: linear-gradient(135deg, rgba(26, 155, 158, 0.05), rgba(20, 120, 122, 0.08));
+    border-radius: 24px;
+    position: relative;
+}
+
+.name-synthesis::before {
+    content: '';
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #1a9b9e, #14787a);
+    border-radius: 2px;
+}
+
+.synthesis-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.synthesis-part {
+    font-family: var(--font-display), serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a9b9e;
+    background: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(26, 155, 158, 0.15);
+    min-width: 80px;
+}
+
+.synthesis-plus,
+.synthesis-equals {
+    font-family: var(--font-display), serif;
+    font-size: 2rem;
+    color: var(--plum);
+    opacity: 0.4;
+}
+
+.synthesis-result {
+    font-family: var(--font-display), serif;
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #1a9b9e, #14787a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding: 0.5rem 2rem;
+    position: relative;
+}
+
+.synthesis-result::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 4px;
+    background: linear-gradient(90deg, #1a9b9e, #14787a);
+    border-radius: 2px;
+}
+
+.synthesis-meaning {
+    font-size: 1.1rem;
+    color: var(--plum);
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.synthesis-meaning strong {
+    color: #1a9b9e;
+    font-weight: 600;
+}
+
 /* Problem */
 .problem {
     padding: 5rem 4rem;
@@ -370,6 +620,19 @@
     .team__grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .deity-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .deity-card--featured {
+        transform: none;
+    }
+
+    .deity-card--featured:hover {
+        transform: translateY(-10px);
+    }
 }
 
 @media (max-width: 768px) {
@@ -401,5 +664,45 @@
         width: 150px;
         height: 150px;
         font-size: 4rem;
+    }
+
+    /* Name Meaning Responsive */
+    .name-meaning {
+        padding: 4rem 2rem;
+    }
+
+    .name-meaning__header h2 {
+        font-size: 2rem;
+    }
+
+    .deity-card__image {
+        height: 220px;
+    }
+
+    .deity-letter {
+        font-size: 3rem;
+    }
+
+    .synthesis-visual {
+        gap: 0.75rem;
+    }
+
+    .synthesis-part {
+        font-size: 1.75rem;
+        padding: 0.5rem 1rem;
+        min-width: 60px;
+    }
+
+    .synthesis-result {
+        font-size: 2rem;
+    }
+
+    .synthesis-plus,
+    .synthesis-equals {
+        font-size: 1.5rem;
+    }
+
+    .name-synthesis {
+        padding: 2rem 1.5rem;
     }
 }
