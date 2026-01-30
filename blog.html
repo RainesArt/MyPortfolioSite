@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Arthur Raines</title>
+    <link rel="icon" type="image/png" href="images/Favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Karla:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="nav nav--dark">
+    <a href="Arthur.H.Raines.html" class="logo logo--light">AR</a>
+    <div class="hamburger hamburger--light" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<!-- Nav Overlay -->
+<div class="nav-overlay" id="navOverlay">
+    <ul class="nav-menu">
+        <li><a href="Arthur.H.Raines.html">Home</a></li>
+        <li><a href="Arthur.H.Raines.html#research">Research</a></li>
+        <li><a href="bumara.html">Bumara</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="Arthur.H.Raines.html#contact" class="cta">Get In Touch</a></li>
+    </ul>
+</div>
+
+<!-- Hero -->
+<header class="blog-hero">
+    <h1>The Blog</h1>
+    <p>My stories, reflections, and deep dives.</p>
+</header>
+
+<!-- Category Filter -->
+<div class="blog-filter">
+    <div class="filter-container">
+        <button class="filter-btn active" data-category="all">All Posts</button>
+        <button class="filter-btn" data-category="stories">Short Stories</button>
+        <button class="filter-btn" data-category="reflections">Reflections</button>
+        <button class="filter-btn" data-category="economics">Economics</button>
+    </div>
+</div>
+
+<!-- Blog Grid -->
+<section class="blog-grid-section">
+    <div class="blog-grid">
+
+        <!-- Dalia's Tale -->
+        <article class="blog-card" data-category="stories">
+            <div class="blog-card__image blog-card__image--story">
+                <!-- Could add an actual image here -->
+            </div>
+            <div class="blog-card__content">
+                <span class="blog-card__category blog-card__category--story">Short Story</span>
+                <h3 class="blog-card__title">Dalia's Tale</h3>
+                <p class="blog-card__excerpt">A young girl navigates survival, memory, and loss.</p>
+                <div class="blog-card__meta">
+                    <span>12 min read</span>
+                    <a href="dalias-tale.html" class="blog-card__link">Read Story →</a>
+                </div>
+            </div>
+        </article>
+
+
+        <!--
+        <article class="blog-card" data-category="reflections">
+            <div class="blog-card__image blog-card__image--reflection"></div>
+            <div class="blog-card__content">
+                <span class="blog-card__category blog-card__category--reflection">Reflection</span>
+                <h3 class="blog-card__title"></h3>
+                <p class="blog-card__excerpt"></p>
+                <div class="blog-card__meta">
+                    <span>8 min read</span>
+                    <a href="on-leaving-home.html" class="blog-card__link">Read Post →</a>
+                </div>
+            </div>
+        </article>
+        -->
+
+        <!-- Placeholder: Economics Post (hidden until you publish one) -->
+        <!--
+        <article class="blog-card" data-category="economics">
+            <div class="blog-card__image blog-card__image--economics"></div>
+            <div class="blog-card__content">
+                <span class="blog-card__category blog-card__category--economics">Economics</span>
+                <h3 class="blog-card__title">Commerce, Capital, Competition</h3>
+                <p class="blog-card__excerpt">The three C's to success</p>
+                <div class="blog-card__meta">
+                    <span>15 min read</span>
+                    <a href="economics-of-early-childhood.html" class="blog-card__link">Read Post →</a>
+                </div>
+            </div>
+        </article>
+        -->
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2026 Arthur Raines</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+
+<script src="js/main.js"></script>
+<script src="js/load_blog_content.js"></script>
+</body>
+</html>
