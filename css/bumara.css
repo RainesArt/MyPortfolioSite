@@ -80,253 +80,404 @@
 }
 
 /* ===================================
-   NAME MEANING SECTION
+   NAME ORIGIN SECTION - Editorial Style
    =================================== */
 
-.name-meaning {
-    padding: 6rem 4rem;
-    background: linear-gradient(180deg, #f8fafa 0%, #fff 100%);
+.name-origin {
+    background: #0a0a0a;
+    color: #fff;
     position: relative;
     overflow: hidden;
 }
 
-.name-meaning::before {
+/* Intro Section */
+.name-origin__intro {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 2rem;
+    position: relative;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+}
+
+.name-origin__intro::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #1a9b9e, #14787a, #1a9b9e);
+    bottom: 0;
+    background:
+            radial-gradient(circle at 20% 80%, rgba(26, 155, 158, 0.15) 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, rgba(255, 193, 7, 0.1) 0%, transparent 50%);
+    pointer-events: none;
 }
 
-.name-meaning__header {
-    text-align: center;
+.name-origin__intro-content {
+    position: relative;
+    z-index: 1;
     max-width: 700px;
-    margin: 0 auto 4rem;
 }
 
-.name-meaning__label {
+.name-origin__eyebrow {
     display: inline-block;
-    background: linear-gradient(135deg, #1a9b9e, #14787a);
-    color: white;
-    padding: 0.5rem 1.5rem;
-    border-radius: 30px;
-    font-size: 0.8rem;
-    font-weight: 600;
+    font-size: 0.75rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 1.5rem;
+    letter-spacing: 4px;
+    color: #1a9b9e;
+    margin-bottom: 2rem;
+    position: relative;
 }
 
-.name-meaning__header h2 {
-    font-size: 3rem;
-    color: var(--plum);
-    margin-bottom: 1rem;
+.name-origin__eyebrow::before,
+.name-origin__eyebrow::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 1px;
+    background: #1a9b9e;
+}
+
+.name-origin__eyebrow::before { right: calc(100% + 1rem); }
+.name-origin__eyebrow::after { left: calc(100% + 1rem); }
+
+.name-origin__intro h2 {
+    font-family: var(--font-display), serif;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 400;
     line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #fff;
 }
 
-.name-meaning__header h2 em {
+.name-origin__intro h2 .highlight {
     color: #1a9b9e;
     font-style: italic;
 }
 
-.name-meaning__intro {
+.name-origin__intro p {
     font-size: 1.15rem;
-    color: var(--plum);
-    opacity: 0.8;
+    color: rgba(255, 255, 255, 0.7);
     line-height: 1.7;
-}
-
-/* Deity Grid */
-.deity-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto 4rem;
-}
-
-.deity-card {
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 40px rgba(26, 155, 158, 0.1);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-}
-
-.deity-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 60px rgba(26, 155, 158, 0.2);
-}
-
-.deity-card--featured {
-    transform: scale(1.05);
-    z-index: 2;
-}
-
-.deity-card--featured:hover {
-    transform: scale(1.05) translateY(-10px);
-}
-
-.deity-card__image {
-    position: relative;
-    height: 280px;
-    overflow: hidden;
-}
-
-.deity-card__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease;
-}
-
-.deity-card:hover .deity-card__image img {
-    transform: scale(1.1);
-}
-
-.deity-card__overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-            to top,
-            rgb(192, 87, 70) 0%,
-            transparent 30%
-    );
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding-bottom: 1.5rem;
-}
-
-.deity-letter {
-    font-family: var(--font-display), serif;
-    font-size: 4rem;
-    font-weight: 700;
-    color: white;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    letter-spacing: 0.05em;
-}
-
-.deity-card__content {
-    padding: 2rem;
-}
-
-.deity-card__content h3 {
-    font-family: var(--font-display), serif;
-    font-size: 1.75rem;
-    color: var(--plum);
-    margin-bottom: 0.5rem;
-}
-
-.deity-origin {
-    display: block;
-    font-size: 0.85rem;
-    color: #1a9b9e;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid rgba(26, 155, 158, 0.15);
-}
-
-.deity-card__content p {
-    font-size: 0.95rem;
-    color: var(--plum);
-    opacity: 0.85;
-    line-height: 1.7;
-}
-
-/* Synthesis Visual */
-.name-synthesis {
-    text-align: center;
-    max-width: 900px;
+    max-width: 500px;
     margin: 0 auto;
-    padding: 3rem;
-    background: linear-gradient(135deg, rgba(26, 155, 158, 0.05), rgba(20, 120, 122, 0.08));
-    border-radius: 24px;
-    position: relative;
 }
 
-.name-synthesis::before {
-    content: '';
-    position: absolute;
-    top: -2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 4px;
-    background: linear-gradient(90deg, #1a9b9e, #14787a);
-    border-radius: 2px;
-}
-
-.synthesis-visual {
+/* Formula Display */
+.name-origin__formula {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 4rem;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
 }
 
-.synthesis-part {
+.formula-piece {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    transition: all 0.4s ease;
+    cursor: default;
+}
+
+.formula-piece:hover {
+    background: rgba(26, 155, 158, 0.1);
+    border-color: rgba(26, 155, 158, 0.3);
+    transform: translateY(-4px);
+}
+
+.formula-syllable {
     font-family: var(--font-display), serif;
     font-size: 2.5rem;
     font-weight: 700;
     color: #1a9b9e;
-    background: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(26, 155, 158, 0.15);
-    min-width: 80px;
 }
 
-.synthesis-plus,
-.synthesis-equals {
+.formula-name {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.formula-connector {
     font-family: var(--font-display), serif;
     font-size: 2rem;
-    color: var(--plum);
-    opacity: 0.4;
+    color: rgba(255, 255, 255, 0.3);
 }
 
-.synthesis-result {
+/* Deity Showcase - Symbol Based Cards */
+.deity-showcase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.deity-item {
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.deity-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.deity-item:hover::before {
+    opacity: 1;
+}
+
+.deity-item--bumba {
+    background: linear-gradient(180deg, #0d1b2a 0%, #0a0a0a 100%);
+}
+.deity-item--bumba::before {
+    background: radial-gradient(circle at center, rgba(100, 181, 246, 0.1) 0%, transparent 70%);
+}
+
+.deity-item--mawu {
+    background: linear-gradient(180deg, #1a1a2e 0%, #0a0a0a 100%);
+}
+.deity-item--mawu::before {
+    background: radial-gradient(circle at center, rgba(206, 147, 216, 0.1) 0%, transparent 70%);
+}
+
+.deity-item--ra {
+    background: linear-gradient(180deg, #1f1a0a 0%, #0a0a0a 100%);
+}
+.deity-item--ra::before {
+    background: radial-gradient(circle at center, rgba(255, 213, 79, 0.1) 0%, transparent 70%);
+}
+
+.deity-item__symbol {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.deity-item__symbol .deity-icon {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.deity-item:hover .deity-item__symbol .deity-icon {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.deity-item--bumba .deity-icon { color: #64b5f6; }
+.deity-item--mawu .deity-icon { color: #ce93d8; }
+.deity-item--ra .deity-icon { color: #ffd54f; }
+
+.deity-item__content {
+    position: relative;
+    z-index: 1;
+}
+
+.deity-item__letter {
     font-family: var(--font-display), serif;
-    font-size: 3rem;
+    font-size: 1rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #1a9b9e, #14787a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    padding: 0.5rem 2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    opacity: 0.4;
+    margin-bottom: 0.5rem;
+}
+
+.deity-item__content h3 {
+    font-family: var(--font-display), serif;
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.deity-item__origin {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    opacity: 0.6;
+}
+
+.deity-item__content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 300px;
+    margin: 0 auto 2rem;
+}
+
+.deity-item__meaning {
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.meaning-word {
+    font-family: var(--font-display), serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.deity-item--bumba .meaning-word { color: #64b5f6; }
+.deity-item--mawu .meaning-word { color: #ce93d8; }
+.deity-item--ra .meaning-word { color: #ffd54f; }
+
+/* Summary Section */
+.name-origin__summary {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 2rem;
+    background: linear-gradient(180deg, #0a0a0a 0%, #1a9b9e 200%);
     position: relative;
 }
 
-.synthesis-result::after {
+.name-origin__summary::before {
     content: '';
     position: absolute;
-    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(26, 155, 158, 0.5), transparent);
+}
+
+.summary-brand {
+    margin-bottom: 2rem;
+}
+
+.summary-result {
+    font-family: var(--font-display), serif;
+    font-size: clamp(4rem, 12vw, 8rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, #1a9b9e, #14787a, #1a9b9e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+}
+
+.summary-result::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
+    width: 60%;
     height: 4px;
     background: linear-gradient(90deg, #1a9b9e, #14787a);
     border-radius: 2px;
 }
 
-.synthesis-meaning {
-    font-size: 1.1rem;
-    color: var(--plum);
+.summary-text {
+    font-size: 1.25rem;
     line-height: 1.8;
-    max-width: 700px;
-    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
 }
 
-.synthesis-meaning strong {
+.summary-text strong {
     color: #1a9b9e;
     font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .deity-panel {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .deity-panel:nth-child(odd) {
+        direction: ltr;
+    }
+
+    .deity-panel__image {
+        height: 50vh;
+        min-height: 400px;
+    }
+
+    .deity-panel__content {
+        padding: 3rem 2rem;
+    }
+
+    .deity-panel__letter {
+        position: static;
+        transform: none;
+        font-size: 4rem;
+        opacity: 0.15;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .name-origin__intro {
+        min-height: auto;
+        padding: 4rem 1.5rem;
+    }
+
+    .name-origin__formula {
+        gap: 0.75rem;
+    }
+
+    .formula-piece {
+        padding: 1rem 1.5rem;
+    }
+
+    .formula-syllable {
+        font-size: 1.75rem;
+    }
+
+    .formula-connector {
+        font-size: 1.5rem;
+    }
+
+    .deity-panel__image {
+        height: 40vh;
+        min-height: 300px;
+    }
+
+    .deity-panel__content {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .name-origin__summary {
+        min-height: auto;
+        padding: 4rem 1.5rem;
+    }
 }
 
 /* Problem */
@@ -621,17 +772,12 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .deity-grid {
+    .deity-showcase {
         grid-template-columns: 1fr;
-        gap: 2rem;
     }
 
-    .deity-card--featured {
-        transform: none;
-    }
-
-    .deity-card--featured:hover {
-        transform: translateY(-10px);
+    .deity-item {
+        padding: 3rem 2rem;
     }
 }
 
@@ -666,43 +812,44 @@
         font-size: 4rem;
     }
 
-    /* Name Meaning Responsive */
-    .name-meaning {
-        padding: 4rem 2rem;
+    /* Name Origin Responsive */
+    .name-origin__intro {
+        min-height: auto;
+        padding: 4rem 1.5rem;
     }
 
-    .name-meaning__header h2 {
-        font-size: 2rem;
-    }
-
-    .deity-card__image {
-        height: 220px;
-    }
-
-    .deity-letter {
-        font-size: 3rem;
-    }
-
-    .synthesis-visual {
+    .name-origin__formula {
         gap: 0.75rem;
     }
 
-    .synthesis-part {
+    .formula-piece {
+        padding: 1rem 1.5rem;
+    }
+
+    .formula-syllable {
         font-size: 1.75rem;
-        padding: 0.5rem 1rem;
-        min-width: 60px;
     }
 
-    .synthesis-result {
-        font-size: 2rem;
-    }
-
-    .synthesis-plus,
-    .synthesis-equals {
+    .formula-connector {
         font-size: 1.5rem;
     }
 
-    .name-synthesis {
-        padding: 2rem 1.5rem;
+    .deity-item__symbol {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 2rem;
+    }
+
+    .deity-item__content h3 {
+        font-size: 1.75rem;
+    }
+
+    .name-origin__summary {
+        min-height: auto;
+        padding: 4rem 1.5rem;
+    }
+
+    .summary-result {
+        font-size: 3rem;
     }
 }

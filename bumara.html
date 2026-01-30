@@ -16,7 +16,7 @@
 <body>
 <!-- Navigation -->
 <nav class="nav nav--dark">
-    <a href="Arthur.H.Raines.html" class="logo logo--light">AR</a>
+    <a href="index.html" class="logo logo--light">AR</a>
     <div class="hamburger hamburger--light" id="hamburger">
         <span></span>
         <span></span>
@@ -27,11 +27,11 @@
 <!-- Nav Overlay -->
 <div class="nav-overlay" id="navOverlay">
     <ul class="nav-menu">
-        <li><a href="Arthur.H.Raines.html">Home</a></li>
-        <li><a href="Arthur.H.Raines.html#research">Research</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#research">Research</a></li>
         <li><a href="bumara.html">Bumara</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="Arthur.H.Raines.html#contact" class="cta">Get In Touch</a></li>
     </ul>
 </div>
 
@@ -51,59 +51,108 @@
 </header>
 
 <!-- Name Meaning -->
-<section class="name-meaning">
-    <div class="name-meaning__header">
-        <span class="name-meaning__label">The Name</span>
-        <h2>What <em>Bumara</em> Means</h2>
-        <p class="name-meaning__intro">Our name comes from three powerful creation deities found in African and Egyptian mythology. Each one stands for a different part of creation, wisdom, and illumination.</p>
+<section class="name-origin">
+    <div class="name-origin__intro">
+        <div class="name-origin__intro-content">
+            <span class="name-origin__eyebrow">The Origin Story</span>
+            <h2>Three <span class="highlight">ancient forces</span>,<br>one modern mission.</h2>
+            <p>Bumara gets its name from three powerful African and Egyptian deities. Each one stands for a key pillar of what we create.</p>
+        </div>
     </div>
 
-    <div class="deity-grid">
-        <div class="deity-card">
-            <div class="deity-card__image">
-                <img src="images/bumba.jpg" alt="Bumba - Kuba Creator God">
-                <div class="deity-card__overlay">
-                    <span class="deity-letter">Bu</span>
-                </div>
+    <!-- Deity Cards - Symbol Based -->
+    <div class="deity-showcase">
+        <div class="deity-item deity-item--bumba">
+            <div class="deity-item__symbol">
+                <svg viewBox="0 0 120 120" class="deity-icon">
+                    <!-- Starburst/Creation symbol -->
+                    <circle cx="60" cy="60" r="12" fill="currentColor"/>
+                    <g stroke="currentColor" stroke-width="2" fill="none">
+                        <line x1="60" y1="8" x2="60" y2="38"/>
+                        <line x1="60" y1="82" x2="60" y2="112"/>
+                        <line x1="8" y1="60" x2="38" y2="60"/>
+                        <line x1="82" y1="60" x2="112" y2="60"/>
+                        <line x1="23" y1="23" x2="44" y2="44"/>
+                        <line x1="76" y1="76" x2="97" y2="97"/>
+                        <line x1="97" y1="23" x2="76" y2="44"/>
+                        <line x1="44" y1="76" x2="23" y2="97"/>
+                    </g>
+                    <circle cx="60" cy="60" r="50" stroke="currentColor" stroke-width="1" fill="none" opacity="0.3"/>
+                    <circle cx="60" cy="60" r="30" stroke="currentColor" stroke-width="1" fill="none" opacity="0.2"/>
+                </svg>
             </div>
-            <div class="deity-card__content">
+            <div class="deity-item__content">
+                <span class="deity-item__letter">Bu</span>
                 <h3>Bumba</h3>
-                <span class="deity-origin">Kuba People • Central Africa</span>
-                <p>The creator god who vomited the sun, moon, stars, and all living creatures into existence. Bumba represents the power of bringing something from nothing—creation through transformation.</p>
+                <span class="deity-item__origin">Kuba People · Central Africa</span>
+                <p>The creator god who vomited forth the sun, moon, stars, and all living creatures. From nothing came everything.</p>
+                <div class="deity-item__meaning">
+                    <span class="meaning-word">Creation</span>
+                </div>
             </div>
         </div>
 
-        <div class="deity-card deity-card--featured">
-            <div class="deity-card__image">
-                <img src="images/mawu.jpeg" alt="Mawu - Fon Moon Goddess">
-                <div class="deity-card__overlay">
-                    <span class="deity-letter">Ma</span>
-                </div>
+        <div class="deity-item deity-item--mawu">
+            <div class="deity-item__symbol">
+                <svg viewBox="0 0 120 120" class="deity-icon">
+                    <!-- Moon/Wisdom symbol -->
+                    <path d="M75 15 C35 15 10 45 10 75 C10 105 35 120 70 120 C50 100 42 75 50 50 C58 25 75 15 100 12 C90 10 82 12 75 15" fill="currentColor"/>
+                    <circle cx="85" cy="30" r="4" fill="currentColor" opacity="0.4"/>
+                    <circle cx="100" cy="50" r="3" fill="currentColor" opacity="0.3"/>
+                    <circle cx="105" cy="75" r="3.5" fill="currentColor" opacity="0.3"/>
+                    <circle cx="95" cy="95" r="2.5" fill="currentColor" opacity="0.25"/>
+                </svg>
             </div>
-            <div class="deity-card__content">
+            <div class="deity-item__content">
+                <span class="deity-item__letter">Ma</span>
                 <h3>Mawu</h3>
-                <span class="deity-origin">Fon People • West Africa</span>
-                <p>The moon goddess associated with wisdom, knowledge, and the night. Mawu embodies calm guidance, intuition, and the illumination that comes from understanding—the light that helps navigate complexity.</p>
+                <span class="deity-item__origin">Fon People · West Africa</span>
+                <p>The moon goddess of wisdom, knowledge, and night. She illuminates paths through darkness with calm guidance.</p>
+                <div class="deity-item__meaning">
+                    <span class="meaning-word">Wisdom</span>
+                </div>
             </div>
         </div>
 
-        <div class="deity-card">
-            <div class="deity-card__image">
-                <img src="images/ra.png" alt="Ra - Egyptian Sun God">
-                <div class="deity-card__overlay">
-                    <span class="deity-letter">Ra</span>
-                </div>
+        <div class="deity-item deity-item--ra">
+            <div class="deity-item__symbol">
+                <svg viewBox="0 0 120 120" class="deity-icon">
+                    <!-- Sun/Ra symbol with eye -->
+                    <circle cx="60" cy="60" r="20" fill="currentColor"/>
+                    <circle cx="60" cy="60" r="32" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                    <g stroke="currentColor" stroke-width="3">
+                        <line x1="60" y1="2" x2="60" y2="20"/>
+                        <line x1="60" y1="100" x2="60" y2="118"/>
+                        <line x1="2" y1="60" x2="20" y2="60"/>
+                        <line x1="100" y1="60" x2="118" y2="60"/>
+                        <line x1="18" y1="18" x2="32" y2="32"/>
+                        <line x1="88" y1="88" x2="102" y2="102"/>
+                        <line x1="102" y1="18" x2="88" y2="32"/>
+                        <line x1="32" y1="88" x2="18" y2="102"/>
+                    </g>
+                    <!-- Eye of Ra hint -->
+                    <ellipse cx="60" cy="60" rx="10" ry="6" fill="none" stroke="rgba(0,0,0,0.3)" stroke-width="2"/>
+                    <circle cx="60" cy="60" r="3" fill="rgba(0,0,0,0.3)"/>
+                </svg>
             </div>
-            <div class="deity-card__content">
+            <div class="deity-item__content">
+                <span class="deity-item__letter">Ra</span>
                 <h3>Ra</h3>
-                <span class="deity-origin">Ancient Egypt • North Africa</span>
-                <p>The sun god who sailed across the sky each day, bringing light and life to the world. Ra symbolizes radiant energy, renewal, and the daily journey of overcoming darkness.</p>
+                <span class="deity-item__origin">Ancient Egypt · North Africa</span>
+                <p>The sun god who sailed across the sky each day, bringing light and life. He represents renewal and triumph over darkness.</p>
+                <div class="deity-item__meaning">
+                    <span class="meaning-word">Illumination</span>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="name-synthesis">
-        <p class="synthesis-meaning">Together, these forces represent our mission: to <strong>create</strong> systems that didn't exist before, to provide <strong>wisdom</strong> that guides businesses through complexity, and to bring <strong>light</strong> to the operations that power growth.</p>
+    <!-- Summary -->
+    <div class="name-origin__summary">
+        <div class="summary-brand">
+            <span class="summary-result">Bumara</span>
+        </div>
+        <p class="summary-text">We <strong>create</strong> systems that didn't exist before. We provide <strong>wisdom</strong> to navigate complexity. We bring <strong>light</strong> to the operations that power growth.</p>
     </div>
 </section>
 
@@ -129,7 +178,7 @@
 <!-- Solution -->
 <section class="solution">
     <h2>What We Do</h2>
-    <p class="solution__intro">Bumara is organized into five connected modules designed to work together.</p>
+    <p class="solution__intro">Bumara is organized into four connected modules designed to work together.</p>
 
     <div class="features">
         <div class="feature">
