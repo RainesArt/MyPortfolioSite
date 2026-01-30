@@ -32,7 +32,7 @@ class PhotoCarousel {
         if (this.totalSlides === 0) return;
 
         this.bindEvents();
-        this.showSlide(0);
+        this.showSlide(0, true); // Pass flag to skip scroll on init
 
         if (this.options.autoplay) {
             this.startAutoplay();
@@ -130,7 +130,7 @@ class PhotoCarousel {
         }
     }
 
-    showSlide(index) {
+    showSlide(index, skipScroll = false) {
         if (this.isTransitioning) return;
 
         // Handle wrapping
@@ -153,12 +153,17 @@ class PhotoCarousel {
             thumb.setAttribute('aria-selected', i === index);
         });
 
-        // Scroll active thumbnail into view
-        if (this.thumbnails[index]) {
-            this.thumbnails[index].scrollIntoView({
-                behavior: 'smooth',
-                block: 'nearest',
-                inline: 'center'
+        // Scroll active thumbnail into view (only within thumbnail container, not page)
+        // Skip on initial load to prevent page from scrolling to carousel
+        if (!skipScroll && this.thumbnails[index] && this.container.querySelector('.carousel-thumbnails')) {
+            const thumbContainer = this.container.querySelector('.carousel-thumbnails');
+            const thumb = this.thumbnails[index];
+
+            // Only scroll horizontally within the thumbnail strip
+            const scrollLeft = thumb.offsetLeft - thumbContainer.offsetWidth / 2 + thumb.offsetWidth / 2;
+            thumbContainer.scrollTo({
+                left: scrollLeft,
+                behavior: 'smooth'
             });
         }
 
