@@ -36,7 +36,7 @@
 
 .hero__location {
     display: inline-block;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -46,7 +46,7 @@
 
 .hero__title {
     font-size: 4rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     letter-spacing: -1px;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .tag {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     padding: 0.75rem 1.25rem;
     border-radius: 10px;
     font-weight: 600;
@@ -96,7 +96,7 @@
 }
 
 .btn--outline-light {
-    border: 2px solid rgba(255,255,255,0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     color: var(--white);
     padding: 1rem 2rem;
     border-radius: 50px;
@@ -105,7 +105,7 @@
 
 .btn--outline-light:hover {
     border-color: var(--sage);
-    background: rgba(173,198,152,0.1);
+    background: rgba(173, 198, 152, 0.1);
 }
 
 /* Research */
@@ -142,10 +142,20 @@
     transform: translateY(-8px);
 }
 
-.card--sage { background: linear-gradient(135deg, var(--sage), var(--mint)); }
-.card--rust { background: linear-gradient(135deg, var(--rust), var(--plum)); color: var(--white); }
-.card--plum { background: linear-gradient(135deg, var(--plum), var(--sage)); color: var(--white); }
-.card--gold { background: linear-gradient(135deg, var(--mint), var(--sage)); }
+.card--sage {
+    background: linear-gradient(135deg, var(--sage), var(--mint));
+}
+.card--rust {
+    background: linear-gradient(135deg, var(--rust), var(--plum));
+    color: var(--white);
+}
+.card--plum {
+    background: linear-gradient(135deg, var(--plum), var(--sage));
+    color: var(--white);
+}
+.card--gold {
+    background: linear-gradient(135deg, var(--mint), var(--sage));
+}
 
 .card__number {
     position: absolute;
@@ -165,7 +175,7 @@
 
 .card__label {
     display: inline-block;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.75rem;
@@ -194,14 +204,14 @@
 .card a {
     display: block;
     padding: 1.25rem 2rem;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     font-weight: 600;
     color: inherit;
     margin-top: 1rem;
 }
 
 .card a:hover {
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 /* Quote */

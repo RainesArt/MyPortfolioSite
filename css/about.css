@@ -45,13 +45,9 @@
 }
 
 .story__image {
-    height: 1200px;
+    max-height: 800px;
     border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-display);
-    color: var(--plum);
+    overflow: hidden;
 }
 
 .story__image_two {
@@ -61,7 +57,6 @@
     object-position: center top;
     display: block;
 }
-
 
 .story__content h2 {
     font-size: 2.5rem;
@@ -172,11 +167,15 @@
     stroke: #fff;
     stroke-width: 1;
     vector-effect: non-scaling-stroke;
-    transition: fill .2s ease;
+    transition: fill 0.2s ease;
 }
 
-.us-map .state.visited { fill: var(--sage); }
-.us-map .state.not-visited { fill: #e0e0e0; }
+.us-map .state.visited {
+    fill: var(--sage);
+}
+.us-map .state.not-visited {
+    fill: #e0e0e0;
+}
 
 .us-map .state.visited:hover {
     fill: var(--rust);
@@ -188,24 +187,20 @@
     stroke: #fff;
     stroke-width: 1;
     vector-effect: non-scaling-stroke;
-    transition: fill .2s ease;
+    transition: fill 0.2s ease;
     fill: #e9eef6;
 }
-
 
 .map-container {
     max-width: 700px;
     margin-inline: auto;
 }
 
-
 .us-map svg {
     display: block;
     width: 100%;
     height: auto;
-
 }
-
 
 /* CTA */
 .cta-section {
@@ -235,7 +230,7 @@
     }
 
     .story__image {
-        height: 300px;
+        max-height: 400px;
     }
 }
 
