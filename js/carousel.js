@@ -228,6 +228,36 @@ class PhotoCarousel {
 // Photo data - easy to extend with new images
 const photoData = [
     {
+        src: 'images/goats_three_standing.jpg',
+        location: 'Alaska',
+        description: 'Family of goats standing still'
+    },
+    {
+      src: 'images/goat_attacking_other_end.jpg',
+      location: 'Alaska',
+      description: 'Goat attacking another that got a bit too close'
+    },
+    {
+      src: 'images/river_mountain_landscape-1.jpg',
+      location: 'Alaska',
+      description: 'River with mountains extending in the background'
+    },
+    {
+      src: 'images/juvenile_eagel_tree_looking_down.jpg',
+      location: 'Alaska',
+      description: 'A juvenile bald eagle looking down'
+    },
+    {
+      src: 'images/goats_mountains_leaping_two-1.jpg',
+      location: 'Alaska',
+      description: 'Mountain goats with a baby leaping'
+    },
+    {
+        src: 'images/bear_water_standing-1.jpg',
+        location: 'Alaska',
+        description: 'A brown bear walking around after taking a nice swim.'
+    },
+    {
         src: 'images/Maine_mountain_print.JPG',
         location: 'Acadia National Park, Maine',
         description: 'Pink granite cliffs meet the Atlantic along the rugged coast'
@@ -301,7 +331,7 @@ const photoData = [
         src: 'images/66745893492__E1473838-AFF3-430B-8A30-4947DBE3CD65.jpeg',
         location: 'Hanover, New Hampshire',
         description: 'Portrait Series, Close-up study'
-    }
+    },
 ];
 
 // Generate carousel HTML
