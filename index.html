@@ -33,6 +33,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
         <link rel="stylesheet" href="vendor/animate/animate.compat.css" />
         <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css" />
+        <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css" />
         <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css" />
         <link rel="stylesheet" href="css/theme.css" />
         <link rel="stylesheet" href="css/theme-elements.css" />
@@ -196,16 +198,136 @@
                     </div>
                 </section>
 
+                <section
+                    class="section section-parallax section-text-light section-height-3 overlay overlay-show overlay-op-6 border-0 m-0"
+                    data-plugin-parallax
+                    data-plugin-options="{'speed': 1.5}"
+                    data-image-src="images/web/img_1873.jpg"
+                >
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10 appear-animation" data-appear-animation="fadeInUpShorter">
+                                <blockquote class="blockquote-primary mb-0">
+                                    <p class="text-5 font-italic text-light">
+                                        "I study how early-life conditions and resource environments shape long-term outcomes,
+                                        because by the time the consequences appear, it's already too late to change them."
+                                    </p>
+                                    <footer class="text-light opacity-7">Arthur Raines</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <div class="container py-5 my-3">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-10 appear-animation" data-appear-animation="fadeInUpShorter">
-                            <blockquote class="blockquote-primary">
-                                <p class="text-5 font-italic">
-                                    "I study how early-life conditions and resource environments shape long-term outcomes,
-                                    because by the time the consequences appear, it's already too late to change them."
-                                </p>
-                                <footer>Arthur Raines</footer>
-                            </blockquote>
+                    <div class="row align-items-end mb-3">
+                        <div class="col-md-8">
+                            <div class="overflow-hidden">
+                                <h2 class="text-color-dark font-weight-normal text-6 mb-0 appear-animation" data-appear-animation="maskUp"><strong class="font-weight-extra-bold">Through</strong> My Lens</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-md-right">
+                            <a href="about.html#photography" class="font-weight-bold">See all photos <i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="lightbox appear-animation" data-appear-animation="fadeInUpShorter" data-plugin-options="{'delegate': 'a.lightbox-portfolio', 'type': 'image', 'gallery': {'enabled': true}, 'image': {'titleSrc': 'data-caption'}}">
+                        <div class="owl-carousel owl-theme photo-grid pb-3" data-plugin-options="{'responsive': {'0': {'items': 1}, '576': {'items': 2}, '992': {'items': 3}}, 'margin': 20, 'loop': false, 'nav': false, 'dots': true}">
+                            <div class="portfolio-item">
+                                <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                    <span class="thumb-info-wrapper border-radius-0">
+                                        <img src="images/thumbs/bear_water_standing-1.jpg" class="img-fluid border-radius-0" alt="A brown bear walking around after taking a nice swim" />
+                                        <span class="thumb-info-title">
+                                            <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Alaska</span>
+                                            <span class="thumb-info-type">A brown bear walking around after taking a nice swim</span>
+                                        </span>
+                                        <span class="thumb-info-action">
+                                            <a href="images/web/bear_water_standing-1.jpg" class="lightbox-portfolio" data-caption="A brown bear walking around after taking a nice swim (Alaska)" aria-label="Enlarge photo">
+                                                <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="portfolio-item">
+                                <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                    <span class="thumb-info-wrapper border-radius-0">
+                                        <img src="images/thumbs/juvenile_eagel_tree_looking_down.jpg" class="img-fluid border-radius-0" alt="A juvenile bald eagle looking down" />
+                                        <span class="thumb-info-title">
+                                            <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Alaska</span>
+                                            <span class="thumb-info-type">A juvenile bald eagle looking down</span>
+                                        </span>
+                                        <span class="thumb-info-action">
+                                            <a href="images/web/juvenile_eagel_tree_looking_down.jpg" class="lightbox-portfolio" data-caption="A juvenile bald eagle looking down (Alaska)" aria-label="Enlarge photo">
+                                                <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="portfolio-item">
+                                <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                    <span class="thumb-info-wrapper border-radius-0">
+                                        <img src="images/thumbs/img_1875.jpg" class="img-fluid border-radius-0" alt="Bison grazing in the Serengeti of North America" />
+                                        <span class="thumb-info-title">
+                                            <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Lamar Valley, Wyoming</span>
+                                            <span class="thumb-info-type">Bison grazing in the Serengeti of North America</span>
+                                        </span>
+                                        <span class="thumb-info-action">
+                                            <a href="images/web/img_1875.jpg" class="lightbox-portfolio" data-caption="Bison grazing in the Serengeti of North America (Lamar Valley, Wyoming)" aria-label="Enlarge photo">
+                                                <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="portfolio-item">
+                                <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                    <span class="thumb-info-wrapper border-radius-0">
+                                        <img src="images/thumbs/maine_mountain_print.jpg" class="img-fluid border-radius-0" alt="Pink granite cliffs meet the Atlantic along the rugged coast" />
+                                        <span class="thumb-info-title">
+                                            <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Acadia National Park, Maine</span>
+                                            <span class="thumb-info-type">Pink granite cliffs meet the Atlantic along the rugged coast</span>
+                                        </span>
+                                        <span class="thumb-info-action">
+                                            <a href="images/web/maine_mountain_print.jpg" class="lightbox-portfolio" data-caption="Pink granite cliffs meet the Atlantic along the rugged coast (Acadia National Park, Maine)" aria-label="Enlarge photo">
+                                                <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="portfolio-item">
+                                <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                    <span class="thumb-info-wrapper border-radius-0">
+                                        <img src="images/thumbs/dsc_3023.jpg" class="img-fluid border-radius-0" alt="The open road stretching toward the Sangre de Cristo Mountains" />
+                                        <span class="thumb-info-title">
+                                            <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">La Cienega, New Mexico</span>
+                                            <span class="thumb-info-type">The open road stretching toward the Sangre de Cristo Mountains</span>
+                                        </span>
+                                        <span class="thumb-info-action">
+                                            <a href="images/web/dsc_3023.jpg" class="lightbox-portfolio" data-caption="The open road stretching toward the Sangre de Cristo Mountains (La Cienega, New Mexico)" aria-label="Enlarge photo">
+                                                <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="portfolio-item">
+                                <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                    <span class="thumb-info-wrapper border-radius-0">
+                                        <img src="images/thumbs/goats_mountains_leaping_two-1.jpg" class="img-fluid border-radius-0" alt="Mountain goats with a baby leaping" />
+                                        <span class="thumb-info-title">
+                                            <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Alaska</span>
+                                            <span class="thumb-info-type">Mountain goats with a baby leaping</span>
+                                        </span>
+                                        <span class="thumb-info-action">
+                                            <a href="images/web/goats_mountains_leaping_two-1.jpg" class="lightbox-portfolio" data-caption="Mountain goats with a baby leaping (Alaska)" aria-label="Enlarge photo">
+                                                <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -256,6 +378,7 @@
         <script src="vendor/jquery.cookie/jquery.cookie.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="vendor/common/common.min.js"></script>
+        <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
         <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
         <script src="js/site.js"></script>
         <script src="js/theme.js"></script>
