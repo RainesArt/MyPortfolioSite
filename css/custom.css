@@ -1,0 +1,72 @@
+/* ===================================
+   SITE OVERRIDES FOR PORTO
+   Porto (css/theme*.css, css/skins/default.css) does the layout and
+   components. This file only applies the site's fonts and palette.
+   =================================== */
+
+:root {
+    --rust: #C05746;
+    --sage: #ADC698;
+    --mint: #D0E3C4;
+    --white: #FFFFFF;
+    --plum: #503047;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    color: #6f5a69;
+}
+
+h1, h2, h3, h4, h5,
+.text-color-dark,
+.font-display {
+    font-family: 'Playfair Display', serif;
+    color: var(--plum) !important;
+    letter-spacing: 0;
+}
+
+/* The header uses the name as text instead of a logo image. */
+#header .header-logo .wordmark {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--plum);
+    text-decoration: none;
+}
+
+.btn-dark {
+    background-color: var(--plum);
+    border-color: var(--plum);
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+    background-color: #3e2437;
+    border-color: #3e2437;
+}
+
+/* Photo tiles share one shape so the grid lines up. */
+.photo-grid .thumb-info-wrapper img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+#footer,
+#footer .footer-copyright {
+    background: var(--plum);
+}
+
+#footer .footer-ribbon {
+    background: var(--rust);
+}
+
+#footer .footer-ribbon::before {
+    border-right-color: #8a3c2f;
+}
+
+#footer h5,
+#footer p,
+#footer a:not(.btn) {
+    color: var(--mint) !important;
+}
