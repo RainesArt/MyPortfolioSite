@@ -1,152 +1,616 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <title>About | Arthur Raines</title>
+        <meta
+            name="description"
+            content="From a village in Liberia to Kentucky, Dartmouth, Northwestern and Chicago: Arthur Raines on the path to studying early childhood."
+        />
         <link rel="icon" type="image/png" href="images/Favicon.png" />
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Karla:wght@400;500;600;700&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="css/main.css" />
-        <link rel="stylesheet" href="css/about.css" />
-        <link rel="stylesheet" href="css/carousel.css" />
+
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="stylesheet" href="vendor/animate/animate.compat.css" />
+        <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css" />
+        <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css" />
+        <link rel="stylesheet" href="css/theme.css" />
+        <link rel="stylesheet" href="css/theme-elements.css" />
+        <link rel="stylesheet" href="css/skins/default.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+        <script src="vendor/modernizr/modernizr.min.js"></script>
     </head>
     <body>
-        <!-- Navigation -->
-        <nav class="nav nav--light">
-            <a href="index.html" class="logo logo--dark">AR</a>
-            <div class="hamburger hamburger--dark" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+        <div class="body">
+            <header
+                id="header"
+                class="header-effect-shrink"
+                data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}"
+            >
+                <div class="header-body">
+                    <div class="header-container container">
+                        <div class="header-row">
+                            <div class="header-column">
+                                <div class="header-row">
+                                    <div class="header-logo">
+                                        <a href="index.html" class="wordmark">Arthur Raines</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-column justify-content-end">
+                                <div class="header-row">
+                                    <div class="header-nav header-nav-links order-2 order-lg-1">
+                                        <div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                                            <nav class="collapse">
+                                                <ul class="nav nav-pills" id="mainNav">
+                                                    <li><a class="nav-link" href="index.html">Home</a></li>
+                                                    <li><a class="nav-link" href="index.html#research">Research</a></li>
+                                                    <li><a class="nav-link active" href="about.html">About</a></li>
+                                                    <li><a class="nav-link" data-hash data-hash-offset="70" href="#photography">Photography</a></li>
+                                                    <li><a class="nav-link" href="https://substack.com/@currenttakes" target="_blank" rel="noopener">Substack</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav" aria-label="Open menu">
+                                            <i class="fas fa-bars"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
 
-        <!-- Nav Overlay -->
-        <div class="nav-overlay" id="navOverlay">
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#research">Research</a></li>
-                <li><a href="about.html">About</a></li>
-                <li>
-                    <a
-                        href="https://substack.com/@currenttakes"
-                        target="_blank"
-                        rel="noopener"
-                        >Substack</a
-                    >
-                </li>
-                <li>
-                    <a href="index.html#contact" class="cta">Get In Touch</a>
-                </li>
-            </ul>
+            <div role="main" class="main">
+                <section
+                    class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-secondary overlay-show overlay-op-6"
+                    style="background-image: url('images/web/river_mountain_landscape-1.jpg')"
+                >
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 align-self-center p-static order-2 text-center">
+                                <h1 class="text-light">About <strong>Arthur</strong></h1>
+                                <span class="sub-title">Liberia &middot; Kentucky &middot; Dartmouth &middot; Chicago</span>
+                            </div>
+                            <div class="col-md-12 align-self-center order-1">
+                                <ul class="breadcrumb breadcrumb-light d-block text-center">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="active">About</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="container py-4">
+                    <div class="row py-4">
+                        <div class="col-md-4 mb-4 mb-md-0 text-center appear-animation" data-appear-animation="fadeInLeftShorter">
+                            <img src="images/IMG_6619.jpeg" class="img-fluid img-thumbnail" alt="Arthur as a young child in Liberia" />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="overflow-hidden">
+                                <h2 class="text-color-dark font-weight-normal text-6 mb-0 appear-animation" data-appear-animation="maskUp"><strong class="font-weight-extra-bold">Where</strong> I Began</h2>
+                            </div>
+                            <div class="overflow-hidden mb-3">
+                                <p class="font-weight-bold text-primary text-uppercase mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">Liberia</p>
+                            </div>
+                            <p class="lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+                                I was born in a small village in Liberia, toward the end of the Second Liberian Civil War.
+                                For a young child, the village seemed peaceful.
+                            </p>
+                            <p class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+                                Each morning I would bathe with a large oval-shaped bowl and then walk into the forest to a
+                                stream where I spent hours catching minnows with my bare hands. In the evenings the men would
+                                return from hunting. Once they came back carrying an enormous python, and the women cut it up
+                                for a stew in a large pot with spices I could not name.
+                            </p>
+                            <p class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
+                                I moved to the United States as a young child, settling first with my adoptive family in
+                                Kentucky before eventually reaching Chicago. At Dartmouth, I studied Economics and Public
+                                Policy, drawn to the ways quantitative methods could be applied to questions about how people
+                                make decisions under constraint.
+                            </p>
+                            <p class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+                                My first research project examined the impact of violence on educational attainment for
+                                children in Nigeria. The work sharpened my interest in microeconomics and in the tools
+                                economists use to measure harm. For my honors thesis, I turned to Tanzania and a question
+                                about what happens to school enrollment when the price of gold rises. Using three rounds of
+                                the Tanzanian National Panel Survey and a difference-in-differences strategy, I compared
+                                households that varied in their proximity to artisanal and industrial gold mines. I found
+                                that a sixty-two percent increase in the price of gold led to an 18.6 percentage point
+                                decline in enrollment among individuals fourteen to seventeen years old living within thirty
+                                kilometers of an artisanal mine. Household wealth increased at the same time. The
+                                opportunity cost of schooling, it turns out, rises with the price of gold.
+                            </p>
+                            <blockquote class="blockquote-primary my-4 appear-animation" data-appear-animation="fadeInUpShorter">
+                                <p class="font-italic">
+                                    The circumstances of a person's early life, and the economic environment surrounding them,
+                                    shape outcomes in ways that are difficult to reverse once they take hold.
+                                </p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="section section-default border-0 my-0">
+                    <div class="container py-4">
+                        <div class="overflow-hidden mb-4 text-center">
+                            <h2 class="text-color-dark font-weight-normal text-6 mb-0 appear-animation" data-appear-animation="maskUp"><strong class="font-weight-extra-bold">Work</strong> &amp; Study</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <section class="timeline" id="timeline">
+                                    <div class="timeline-body">
+                                        <div class="timeline-date">
+                                            <h3 class="text-primary font-weight-bold">Now</h3>
+                                        </div>
+
+                                        <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
+                                            <div class="timeline-box-arrow"></div>
+                                            <div class="p-2">
+                                                <h3 class="font-weight-bold text-3 mt-1 mb-1">Bumara &middot; Co-Founder &amp; CEO</h3>
+                                                <p class="mb-0 text-2"><a href="https://www.bumara.com/" target="_blank" rel="noopener">bumara.com</a></p>
+                                            </div>
+                                        </article>
+
+                                        <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                            <div class="timeline-box-arrow"></div>
+                                            <div class="p-2">
+                                                <h3 class="font-weight-bold text-3 mt-1 mb-1">EC*REACH &middot; Research Analyst</h3>
+                                                <p class="mb-0 text-2">
+                                                    At the Early Childhood Research Alliance of Chicago, I work with city agencies to
+                                                    clean, organize, and analyze administrative data on early childhood education. I
+                                                    led a project to unduplicate children across seven administrative databases
+                                                    using probabilistic matching techniques and have contributed to several papers
+                                                    evaluating Chicago's Universal Pre-K program.
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="400">
+                                            <div class="timeline-box-arrow"></div>
+                                            <div class="p-2">
+                                                <h3 class="font-weight-bold text-3 mt-1 mb-1">Northwestern University</h3>
+                                                <p class="mb-0 text-2">Master's in Statistics and Data Science (current).</p>
+                                            </div>
+                                        </article>
+
+                                        <div class="timeline-date">
+                                            <h3 class="text-primary font-weight-bold">Before</h3>
+                                        </div>
+
+                                        <article class="timeline-box right text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
+                                            <div class="timeline-box-arrow"></div>
+                                            <div class="p-2">
+                                                <h3 class="font-weight-bold text-3 mt-1 mb-1">Nuveen &middot; Municipal Bonds Analyst</h3>
+                                                <p class="mb-0 text-2">
+                                                    I focused on general obligation bonds, charter school bonds, and multi-family
+                                                    housing projects. The role gave me a view into how capital markets interact with
+                                                    the communities around them.
+                                                </p>
+                                            </div>
+                                        </article>
+
+                                        <article class="timeline-box left text-left appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                                            <div class="timeline-box-arrow"></div>
+                                            <div class="p-2">
+                                                <h3 class="font-weight-bold text-3 mt-1 mb-1">Dartmouth College</h3>
+                                                <p class="mb-0 text-2">Economics with high honors, minor in Public Policy.</p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="container py-5" id="photography">
+                    <div class="overflow-hidden">
+                        <h2 class="text-color-dark font-weight-normal text-6 mb-0 appear-animation" data-appear-animation="maskUp"><strong class="font-weight-extra-bold">Through</strong> My Lens</h2>
+                    </div>
+                    <div class="overflow-hidden mb-3">
+                        <p class="mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">Moments captured in Alaska, the national parks, coastal Maine and closer to home.</p>
+                    </div>
+                    <div class="row photo-grid lightbox my-4" data-plugin-options="{'delegate': 'a.lightbox-portfolio', 'type': 'image', 'gallery': {'enabled': true}, 'image': {'titleSrc': 'data-caption'}}">
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/goats_three_standing.jpg" class="img-fluid border-radius-0" alt="Family of goats standing still" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Alaska</span>
+                                        <span class="thumb-info-type">Family of goats standing still</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/goats_three_standing.jpg" class="lightbox-portfolio" data-caption="Family of goats standing still (Alaska)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/goat_attacking_other_end.jpg" class="img-fluid border-radius-0" alt="Goat attacking another that got a bit too close" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Alaska</span>
+                                        <span class="thumb-info-type">Goat attacking another that got a bit too close</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/goat_attacking_other_end.jpg" class="lightbox-portfolio" data-caption="Goat attacking another that got a bit too close (Alaska)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/river_mountain_landscape-1.jpg" class="img-fluid border-radius-0" alt="River with mountains extending in the background" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Alaska</span>
+                                        <span class="thumb-info-type">River with mountains extending in the background</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/river_mountain_landscape-1.jpg" class="lightbox-portfolio" data-caption="River with mountains extending in the background (Alaska)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/juvenile_eagel_tree_looking_down.jpg" class="img-fluid border-radius-0" alt="A juvenile bald eagle looking down" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Alaska</span>
+                                        <span class="thumb-info-type">A juvenile bald eagle looking down</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/juvenile_eagel_tree_looking_down.jpg" class="lightbox-portfolio" data-caption="A juvenile bald eagle looking down (Alaska)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/goats_mountains_leaping_two-1.jpg" class="img-fluid border-radius-0" alt="Mountain goats with a baby leaping" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Alaska</span>
+                                        <span class="thumb-info-type">Mountain goats with a baby leaping</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/goats_mountains_leaping_two-1.jpg" class="lightbox-portfolio" data-caption="Mountain goats with a baby leaping (Alaska)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/bear_water_standing-1.jpg" class="img-fluid border-radius-0" alt="A brown bear walking around after taking a nice swim" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Alaska</span>
+                                        <span class="thumb-info-type">A brown bear walking around after taking a nice swim</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/bear_water_standing-1.jpg" class="lightbox-portfolio" data-caption="A brown bear walking around after taking a nice swim (Alaska)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/maine_mountain_print.jpg" class="img-fluid border-radius-0" alt="Pink granite cliffs meet the Atlantic along the rugged coast" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Acadia National Park, Maine</span>
+                                        <span class="thumb-info-type">Pink granite cliffs meet the Atlantic along the rugged coast</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/maine_mountain_print.jpg" class="lightbox-portfolio" data-caption="Pink granite cliffs meet the Atlantic along the rugged coast (Acadia National Park, Maine)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/maine_river_print.jpg" class="img-fluid border-radius-0" alt="Morning mist rising over a quiet inlet" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Acadia National Park, Maine</span>
+                                        <span class="thumb-info-type">Morning mist rising over a quiet inlet</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/maine_river_print.jpg" class="lightbox-portfolio" data-caption="Morning mist rising over a quiet inlet (Acadia National Park, Maine)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/dsc_3023.jpg" class="img-fluid border-radius-0" alt="The open road stretching toward the Sangre de Cristo Mountains" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">La Cienega, New Mexico</span>
+                                        <span class="thumb-info-type">The open road stretching toward the Sangre de Cristo Mountains</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/dsc_3023.jpg" class="lightbox-portfolio" data-caption="The open road stretching toward the Sangre de Cristo Mountains (La Cienega, New Mexico)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/img_1871.jpg" class="img-fluid border-radius-0" alt="A bison herd taking over the road" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Yellowstone National Park</span>
+                                        <span class="thumb-info-type">A bison herd taking over the road</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/img_1871.jpg" class="lightbox-portfolio" data-caption="A bison herd taking over the road (Yellowstone National Park)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/img_1875.jpg" class="img-fluid border-radius-0" alt="Bison grazing in the Serengeti of North America" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Lamar Valley, Wyoming</span>
+                                        <span class="thumb-info-type">Bison grazing in the Serengeti of North America</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/img_1875.jpg" class="lightbox-portfolio" data-caption="Bison grazing in the Serengeti of North America (Lamar Valley, Wyoming)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/img_1873.jpg" class="img-fluid border-radius-0" alt="Bison by the river, framed by lodgepole pines" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Yellowstone River</span>
+                                        <span class="thumb-info-type">Bison by the river, framed by lodgepole pines</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/img_1873.jpg" class="lightbox-portfolio" data-caption="Bison by the river, framed by lodgepole pines (Yellowstone River)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/img_1868.jpg" class="img-fluid border-radius-0" alt="A solitary bison in the North Dakota badlands" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Theodore Roosevelt National Park</span>
+                                        <span class="thumb-info-type">A solitary bison in the North Dakota badlands</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/img_1868.jpg" class="lightbox-portfolio" data-caption="A solitary bison in the North Dakota badlands (Theodore Roosevelt National Park)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/img_1874.jpg" class="img-fluid border-radius-0" alt="Elk grazing against the backdrop of the Absaroka Range" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Mammoth Hot Springs, Wyoming</span>
+                                        <span class="thumb-info-type">Elk grazing against the backdrop of the Absaroka Range</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/img_1874.jpg" class="lightbox-portfolio" data-caption="Elk grazing against the backdrop of the Absaroka Range (Mammoth Hot Springs, Wyoming)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/img_1877.jpg" class="img-fluid border-radius-0" alt="A curious prairie dog keeping watch" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">South Dakota Prairie</span>
+                                        <span class="thumb-info-type">A curious prairie dog keeping watch</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/img_1877.jpg" class="lightbox-portfolio" data-caption="A curious prairie dog keeping watch (South Dakota Prairie)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/img_1876.jpg" class="img-fluid border-radius-0" alt="Traditional rope pulleys on a classic sailing vessel" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Coastal Maine</span>
+                                        <span class="thumb-info-type">Traditional rope pulleys on a classic sailing vessel</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/img_1876.jpg" class="lightbox-portfolio" data-caption="Traditional rope pulleys on a classic sailing vessel (Coastal Maine)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/img_0224.jpg" class="img-fluid border-radius-0" alt="A moody evening along the rocky shore" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Evanston, Illinois</span>
+                                        <span class="thumb-info-type">A moody evening along the rocky shore</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/img_0224.jpg" class="lightbox-portfolio" data-caption="A moody evening along the rocky shore (Evanston, Illinois)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/66828128548.jpg" class="img-fluid border-radius-0" alt="Portrait series: contrasting faces" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Hanover, New Hampshire</span>
+                                        <span class="thumb-info-type">Portrait series: contrasting faces</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/66828128548.jpg" class="lightbox-portfolio" data-caption="Portrait series: contrasting faces (Hanover, New Hampshire)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/66828129896.jpg" class="img-fluid border-radius-0" alt="Portrait series: profile in silhouette" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Hanover, New Hampshire</span>
+                                        <span class="thumb-info-type">Portrait series: profile in silhouette</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/66828129896.jpg" class="lightbox-portfolio" data-caption="Portrait series: profile in silhouette (Hanover, New Hampshire)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/66796520409.jpg" class="img-fluid border-radius-0" alt="Portrait series: contemplation in monochrome" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Hanover, New Hampshire</span>
+                                        <span class="thumb-info-type">Portrait series: contemplation in monochrome</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/66796520409.jpg" class="lightbox-portfolio" data-caption="Portrait series: contemplation in monochrome (Hanover, New Hampshire)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <span class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                <span class="thumb-info-wrapper border-radius-0">
+                                    <img src="images/thumbs/66745893492.jpg" class="img-fluid border-radius-0" alt="Portrait series: close-up study" loading="lazy" />
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 font-weight-bold text-dark position-relative top-3">Hanover, New Hampshire</span>
+                                        <span class="thumb-info-type">Portrait series: close-up study</span>
+                                    </span>
+                                    <span class="thumb-info-action">
+                                        <a href="images/web/66745893492.jpg" class="lightbox-portfolio" data-caption="Portrait series: close-up study (Hanover, New Hampshire)" aria-label="Enlarge photo">
+                                            <span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search text-dark"></i></span>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer id="footer">
+                <div class="container">
+                    <div class="footer-ribbon">
+                        <span>Get in Touch</span>
+                    </div>
+                    <div class="row py-5 my-4">
+                        <div class="col-md-6 col-lg-5 mb-4 mb-lg-0">
+                            <h5 class="text-3 mb-3">LET'S CONNECT</h5>
+                            <p class="pr-1">Interested in discussing research collaboration or policy work? Send me an email.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                            <div class="contact-details">
+                                <h5 class="text-3 mb-3">CONTACT</h5>
+                                <ul class="list list-icons list-icons-lg">
+                                    <li class="mb-1"><i class="far fa-dot-circle text-color-primary"></i><p class="m-0">Chicago, Illinois</p></li>
+                                    <li class="mb-1"><i class="far fa-envelope text-color-primary"></i><p class="m-0"><a data-contact href="#footer">Email me</a></p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <h5 class="text-3 mb-3">FOLLOW</h5>
+                            <ul class="social-icons">
+                                <li class="social-icons-github"><a href="https://github.com/RainesArt" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a></li>
+                                <li class="social-icons-rss"><a href="https://substack.com/@currenttakes" target="_blank" rel="noopener" title="Substack"><i class="fas fa-rss"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container py-2">
+                        <div class="row py-4">
+                            <div class="col d-flex align-items-center justify-content-center">
+                                <p>&copy; <span data-year>2026</span> Arthur Raines. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
 
-        <!-- Hero -->
-        <header class="about-hero">
-            <h1>Arthur Raines</h1>
-        </header>
-
-        <!-- Story -->
-        <section class="story">
-            <div class="story__grid">
-                <div class="story__image">
-                    <img
-                        src="images/IMG_6619.jpeg"
-                        alt="Arthur Raines"
-                        class="hero__img"
-                    />
-                </div>
-                <div class="story__content">
-                    <h2>Where I Began</h2>
-                    <p>
-                        I was born in a small village in Liberia, toward the end
-                        of the Second Liberian Civil War. For a young child, the
-                        village seemed peaceful. Each morning I would bathe with
-                        a large oval-shaped bowl and then walk into the forest
-                        to a stream where I spent hours catching minnows with my
-                        bare hands. In the evenings the men would return from
-                        hunting. Once they came back carrying an enormous
-                        python, and the women cut it up for a stew in a large
-                        pot with spices I could not name.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Narrative -->
-        <section class="narrative">
-            <div class="narrative__content">
-                <p>
-                    I moved to the United States as a young child, settling
-                    first with my adoptive family in Kentucky before eventually
-                    reaching Chicago. At Dartmouth, I studied Economics and
-                    Public Policy, drawn to the ways quantitative methods could
-                    be applied to questions about how people make decisions
-                    under constraint.
-                </p>
-
-                <p>
-                    My first research project examined the impact of violence on
-                    educational attainment for children in Nigeria. The work
-                    sharpened my interest in microeconomics and in the tools
-                    economists use to measure harm. For my honors thesis, I
-                    turned to Tanzania and a question about what happens to
-                    school enrollment when the price of gold rises. Using three
-                    rounds of the Tanzanian National Panel Survey and a
-                    difference-in-differences strategy, I compared households
-                    that varied in their proximity to artisanal and industrial
-                    gold mines. I found that a sixty-two percent increase in the
-                    price of gold led to an 18.6 percentage point decline in
-                    enrollment among individuals fourteen to seventeen years old
-                    living within thirty kilometers of an artisanal mine.
-                    Household wealth increased at the same time. The opportunity
-                    cost of schooling, it turns out, rises with the price of
-                    gold.
-                </p>
-
-                <blockquote>
-                    The circumstances of a person's early life, and the economic
-                    environment surrounding them, shape outcomes in ways that
-                    are difficult to reverse once they take hold.
-                </blockquote>
-
-                <p>
-                    After graduation, I worked as a municipal bonds analyst at
-                    Nuveen, where I focused on general obligation bonds, charter
-                    school bonds, and multi-family housing projects. The role
-                    gave me a view into how capital markets interact with the
-                    communities around them.
-                </p>
-
-                <p>
-                    Now, as a Research Analyst at the Early Childhood Research
-                    Alliance of Chicago (EC*REACH), I work with city agencies to
-                    clean, organize, and analyze administrative data on early
-                    childhood education. I led a project to unduplicate children
-                    across seven administrative databases using probabilistic
-                    matching techniques and have contributed to several papers
-                    evaluating Chicago's Universal Pre-K program.
-                </p>
-            </div>
-        </section>
-
-        <!-- Map -->
-        <section class="map-section" aria-labelledby="map-title"></section>
-
-        <!-- CTA -->
-        <section class="cta-section">
-            <h2>Let's Connect</h2>
-            <p>
-                Interested in discussing research collaboration or policy work?
-            </p>
-            <a id="contact-me" class="btn btn--primary">Get In Touch</a>
-        </section>
-        <script src="js/main.js"></script>
-        <script src="js/carousel.js"></script>
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+        <script src="vendor/jquery.cookie/jquery.cookie.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/common/common.min.js"></script>
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="js/site.js"></script>
+        <script src="js/theme.js"></script>
+        <script src="js/theme.init.js"></script>
     </body>
 </html>
