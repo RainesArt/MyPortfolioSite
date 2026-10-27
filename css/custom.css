@@ -70,3 +70,9 @@ h1, h2, h3, h4, h5,
 #footer a:not(.btn) {
     color: var(--mint) !important;
 }
+
+/* Section headings over a parallax photo stay white. */
+.section-parallax h2,
+.section-parallax h2 strong {
+    color: var(--white) !important;
+}
