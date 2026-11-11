@@ -1,0 +1,30 @@
+/* ===================================
+   BOOK READER
+   Sizing for the flip book on in-gold-they-trust.html.
+   =================================== */
+
+/* Cap the open spread so the book and its controls fit on one screen:
+   1.545 is the width of two letter pages over their height (2 x 612 / 792),
+   and 230px leaves room for the header and the page-turn controls. */
+.book-stage {
+    max-width: min(1520px, calc((100vh - 230px) * 1.545));
+    margin: 0 auto;
+}
+
+.book-page {
+    background: var(--white);
+}
+
+.book-page img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book-count {
+    min-width: 9rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--plum);
+}
